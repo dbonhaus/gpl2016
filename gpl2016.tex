@@ -1,0 +1,494 @@
+%% -*- show-trailing-whitespace: t -*-
+%% gpl2016.tex - Lecture on the FSF GPL Compliance Lab
+%%
+%% Copyright (C)  2016 Yoni Rabkin
+%%
+%% Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+
+\renewcommand{\familydefault}{cmr}
+\newcommand{\nitem}{\item[$\ast$]}
+\newcommand{\sitem}{\item[]}
+\newcommand{\pp}{\pause}
+
+\documentclass[
+  size=12pt,
+  style=simple,
+  paper=screen
+]{powerdot}
+
+\pddefinetemplate{titleslide}{
+  titlefont=\large\bfseries\raggedright,
+  texthook=tl,textpos={.05\slidewidth,.83\slideheight},
+  textwidth=.9\slidewidth,textfont=\tabcolsep0pt,
+  textheight=.66\slideheight
+}{%
+}
+\pddefinetemplate{basic}{
+  titlepos={.05\slidewidth,.93\slideheight},
+  titlewidth=.9\slidewidth,textheight=.66\slideheight,
+  titlefont=\large\bfseries\raggedright,
+  lfpos={.03\slidewidth,.04\slideheight},
+  tocslidesep=.6ex,textheight=.68\slideheight,
+  ifsetup=portrait,
+  textpos={.05\slidewidth,.83\slideheight},
+  textwidth=.9\slidewidth,
+  ifsetup=landscape,
+  textpos={.2\slidewidth,.83\slideheight},
+  textwidth=.75\slidewidth
+}{%
+  \psline[linewidth=.8pt](0,.9\slideheight)(\slidewidth,.9\slideheight)%
+}
+
+\title{FSF GPL Compliance Lab \& Recent Developments in Free Software Licensing}
+
+\author{Yoni Rabkin (yrk@gnu.org)}
+
+\begin{document}
+
+\maketitle
+
+\begin{wideslide}{Introductions}
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem I'm a programmer, GNU maintainer, and a paralegal
+    \pp
+
+    \nitem I've been answering people's licensing questions as a
+    volunteer at the FSF's GPL Compliance Lab for decade...
+    \pp
+
+    \nitem ...but I'm not a lawyer, nor do I represent the FSF
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Abstract}
+  Let's talk about:
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem The GPL Compliance Lab's relation to the FSF.
+
+    \nitem What the GPL Compliance Lab does.
+
+    \nitem Recent developments in free software licensing that The Lab
+    is involved with.
+
+    \nitem How to get involved.
+
+  \end{itemize}
+  \pp
+
+  I would be very grateful for questions, comments, and suggestions at
+  any stage of the talk; don't sit on your questions!
+\end{wideslide}
+
+\begin{wideslide}{The FSF}
+  The Free Software Foundation (FSF) \ldots
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem \ldots is a nonprofit with a worldwide mission to promote
+    computer user freedom\pp\\(with a well-defined meaning to the
+    word ``freedom'')
+
+    \pp
+
+    \nitem \ldots publishes licenses, such as the GNU GPL
+
+    \pp
+
+    \nitem \ldots leads the GNU Project
+
+    \pp
+
+    \nitem \ldots is effective: the FSF is a tiny organization by choice,
+    but has a strong voice, efficiently uses a small budget sourced
+    almost entirely from direct donations
+
+    \pp
+
+    \nitem \ldots inspires a lot of volunteer work.
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{The GPL Compliance Lab}
+  The GPL Compliance Lab is an internal part of the FSF.
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem an informal activity since 1992
+
+    \nitem formally since 2001\\\pp(I started volunteering in 2006)
+
+    \pp
+
+    \nitem run by FSF staff, with the help of volunteers
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{The GPL Compliance Lab}
+  The Compliance Lab's activities are:
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem \emph{Education \& Support}
+
+    \nitem \emph{Copyright \& Compliance}
+
+    \nitem \emph{Verification \& Certification}
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Education \& Support}
+  The GPL FAQ, articles, news posts, as well as answering
+  questions\ldots lots of questions at licensing@fsf.org.
+
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Is this license a free software license, and is it
+    GPL-compatible?
+
+    \pp
+
+    \nitem Is this a GPL violation?
+
+    \pp
+
+    \nitem Can we include footage of GPL-licensed software in our
+    movie?
+
+    \pp
+
+    \nitem Can I use the GPL to license hardware?
+
+    \pp
+
+    \nitem Can I require that people using my GPL'd work cite me in
+    their academic paper?
+
+    \pp
+
+    \nitem May I print this piece of GNU art on underwear I'm selling?
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Education \& Support}
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Questions from: private persons, companies of all sizes,
+    governments, military, lawyers, researchers, artists, etc.
+
+    \pp
+
+    \nitem Proprietary software companies write in all the time \ldots
+    \pp but the service is given gratis and at no cost only to the
+    free software community.
+
+    \pp
+
+    \nitem A testament to the relevance of the FSF, and to how much
+    people trust the FSF.
+  \end{itemize}
+
+\end{wideslide}
+
+\begin{wideslide}{Copyright \& Compliance}
+  Enforce the terms of licenses for software for which the FSF holds
+  the copyright (and help others do the same).
+
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem The FSF gets a lot of violation reports, and investigates
+    all of them.
+
+    \pp
+
+    \nitem Collect the who, what, and how of the case.
+
+    \pp
+
+    \nitem Verify that a violation actually occurred.
+
+    \pp
+
+    \nitem Contact the right people.
+
+    \pp
+
+    \nitem The goal is compliance, and repairing damage to the
+    community; not money.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Copyright \& Compliance}
+  Bringing parties into compliance is best done quietly, quickly, and
+  professionally.
+
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Most parties are unaware of the violation, and act quickly
+    to correct it.
+
+    \pp
+
+    \nitem A quiet initial contact is usually enough, and the involved
+    parties are often please to be back in compliance\pp \\ (the terms of
+    GPLv3 make getting back into compliance easier for everyone.)
+
+    \pp
+
+    \nitem In other cases the FSF has expert legal advice from the
+    Software Freedom Law Center.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Verification \& Certification}
+  Verification \& Certification on the software side of things.
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Maintain a list of committed, freedom respecting GNU/Linux
+    distros.
+
+    \pp
+
+    \nitem Work on the Free Software Directory.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Verification \& Certification}
+  On the hardware side of things, the Respects Your Freedom (RYF)
+  hardware certification program.
+  \pp
+
+  \begin{itemize}
+    \nitem Publish and maintain criteria for freedom-respecting
+    hardware:
+
+    \pp
+
+    \begin{itemize}
+    \item Always 100\% free software \pp
+    \item User installation of modified software, compile-able with free software \pp
+    \item Software for building, installation and maintenance and
+      administration must be free software, free documentation \pp
+    \item No spying, cooperation with GNU project policies \pp
+    \item Avoids confusion with other products and endorsements \pp
+    \item If the device supports encumbered formats, it must also
+      support free formats that serve the same purpose. \pp
+    \item Relevant patents must be freely licensed \pp
+    \item Failure to meet these criteria terminates the endorsement
+    \end{itemize}
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Verification \& Certification}
+  The Respects Your Freedom (RYF) hardware certification program has been a success.
+
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Awards certification to products which meet that criteria.
+
+    \pp
+
+    \nitem Already awarded RYF certification to a total of 19 hardware
+    products, with more on the way, and more in the formal review
+    process.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Recent Developments in Free Software Licensing}
+  The Compliance Lab is involved in a number of ongoing issues,
+  including, but not limited to:
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem \emph{The Linux Kernel and ZFS}
+
+    \nitem \emph{Google v Oracle}
+
+    \nitem \emph{Save Wifi}
+  \end{itemize}
+\end{wideslide}
+
+
+\begin{wideslide}{Recent Developments}
+  The Linux Kernel and ZFS
+
+  \pp
+
+  \begin{itemize}
+
+    \nitem The kernel Linux is currently under GPLv2.
+
+    \pp
+
+    \nitem The CDDL is a free software license which is
+    GPL-incompatible because of its weak, per-file, copyleft.
+
+    \pp
+
+    \nitem ZFS is a file system, now owned by Oracle and licensed
+    under the CDDL.
+
+    \pp
+
+  \end{itemize}
+  \begin{itemize}
+
+    \nitem ZFS can be integrated via FUSE, which causes no licensing
+    issues \ldots \pp But linking ZFS to the kernel Linux via a LKM is
+    fraught.
+
+    \pp
+
+    \nitem Debian has recognized, and side-stepped the issue by
+    placing ZFS in their \emph{contrib} repository.
+
+    \pp
+
+    \nitem Ubuntu decided to distribute ZFS as a Linux kernel module,
+    which is potentially a violation of both the CDDL and GPLv2.
+
+    \pp
+
+    \nitem Oracle can make this whole issue disappear by releasing ZFS
+    under a GPL-compatible license.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{Recent Developments}
+  Google v Oracle
+
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{0.5em}
+
+    \sitem \emph{Aug 2010} - Oracle sues Google over Google's
+    implementation of Java for Android.
+
+    \pp
+
+    \sitem \emph{May 2012} - Original decision ends in ruling that
+    APIs are not subject to copyright.
+
+    \pp
+
+    \sitem \emph{May 2014} - Remanded to Federal court on appeal ends
+    in ruling that APIs are subject to copyright.
+
+    \pp
+
+    \sitem \emph{Jun 2015} - Supreme court denies the petition to see
+    the case.
+
+    \pp
+
+    \sitem \emph{May 2016} - Return to district court for fair use
+    trail with a unanimous jury decision that Google's use was fair
+    use. \pp \\ \ldots Oracle announces it would appeal.
+
+    \pp
+
+  \end{itemize}
+
+  Software Freedom Law Center and EFF file friend of the court briefs,
+  and the Compliance Lab will continue to monitor and report.
+\end{wideslide}
+
+\begin{wideslide}{Save Wifi}
+  In 2015 the FCC announced the proposal of new rules requiring
+  manufacturers to implement locks on all wireless devices. The FSF
+  met with the FCC to voice concerns:
+
+  \pp
+
+  \begin{itemize}
+    \nitem No clear separation between locked down firmware and the
+    OS.
+
+    \pp
+
+    \nitem Users forced to give up control of their wireless devices
+    to ``authorized parties''.
+
+    \pp
+
+    \nitem Creates vendor lock-in.
+
+    \pp
+
+  \end{itemize}
+
+  The FCC's response was that the FCC affirms that this is designed to
+  prevent the user changing the software even if those changes would
+  comply with the rules. Moreover, that the rules would require the
+  manufactures to implement security features to prevent modification.
+  \pp
+
+  \ldots but the fight continues in 2016.
+
+\end{wideslide}
+
+\begin{wideslide}{Volunteering for the Compliance Lab}
+  You too can stare at copyright licenses for hours on end.
+  \pp
+
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \nitem Yes, there is a test.
+
+    \pp
+
+    \nitem There is a training and mentoring period, so long-term
+    commitment is best.
+
+  \end{itemize}
+\end{wideslide}
+
+\begin{wideslide}{End Matter}
+  \begin{itemize}
+    \setlength{\itemsep}{1em}
+
+    \sitem Written using \emph{powerdot}
+    (\url{www.ctan.org/pkg/powerdot}).
+
+    \sitem Released under the terms of the Attribution-ShareAlike 4.0
+    International (CC BY-SA 4.0) license.
+
+    \sitem Source code available at \ldots
+
+  \end{itemize}
+\end{wideslide}
+
+
+\end{document}
+\endinput
+
+%% gpl2016.tex ends here.
